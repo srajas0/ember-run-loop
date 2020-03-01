@@ -46,9 +46,9 @@ export default Component.extend({
     },
     actions: {
         focusedOut() {
-            this._syncBinding();
+            // this._syncBinding();
             // this._schedulers();
-            // this._Wrappers();
+            this._Wrappers();
         }
     }
 });
