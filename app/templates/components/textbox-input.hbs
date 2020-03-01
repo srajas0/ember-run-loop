@@ -1,0 +1,20 @@
+<div class="input-row">
+  <label class="lbl">{{label}}: </label>
+  <div class="fields">
+    {{input type=type value=value placeholder=caption 
+      focusOut=(action "focusedOut")
+    }}
+  </div>
+  {{#if showError}}
+    <div class="field-error">
+      {{v-get model errorProp "message"}}
+    </div>
+  {{/if}}
+  
+  {{!-- run loop example purpose --}}
+  {{#if isError}}
+    <div class="field-error">
+      isError message
+    </div>
+  {{/if}}
+</div>
